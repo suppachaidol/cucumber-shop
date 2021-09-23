@@ -18,10 +18,11 @@ public class BuyStepdefs {
         order = new Order();
     }
 
-    @Given("a product {string} with price {float} exists")
+    @Given("สินค้า {string} with price {float} exists")
     public void a_product_with_price_exists(String name, double price) {
         catalog.addProduct(name, price);
     }
+
 
     @When("I buy {string} with quantity {int}")
     public void i_buy_with_quantity(String name, int quantity) {
